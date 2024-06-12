@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: beige;
+    padding: 2%;
+    margin: 2%;
+    border: 5%;
+    text-align: right;
+}
+h3{
+    color: rgb(21, 161, 21);
+}
+
+legend, form{
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 10px;
+    border: 3px solid black;
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+  }
+input, select{
+    text-align: center;
+    font-weight: 300;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    width: 80%;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+select, button{
+    text-align: center;
+    background-color: burlywood;
+}
+p{
+    text-indent: 5px;
+    font-weight: 300;
+}
+
+input[type="submit"]{
+    width: 50%;
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(81, 197, 28);
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(8, 7, 87);
+    transition: 3s;
+}
+
+input[type="submit"]:hover{
+    text-align: center;
+    background-color: rgb(8, 141, 17);
+    color: rgb(38, 5, 5);
+}
+
+.bttn, button, a{
+    text-decoration: none;
+    width: 30%;
+    margin: 0.5%;
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(166, 213, 54);
+    font-size: 25px;
+    font-weight: bold;
+    transition: width 2s;
+}
+button:hover, a:hover, .bttn:hover{
+    width: 40%;
+    background-color: rgb(8, 141, 17);
+       
+}
