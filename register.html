@@ -9,31 +9,57 @@
 </head>
 <body>
     <fieldset>
-        <fieldset>
-        <legend><h3><b>REGISTER</b></h3></legend>
-        <button><a href="login.html"><b> LOGIN </b></a></button>
+        
+            <div>
+            <button><a href="login.html"><b> LOGIN </b></a></button>
             <legend><img src="login.png" width="10%"></legend>
-        <form>
+            <legend><h1><b>REGISTER</b></h1></legend>
+        
+        </div>
+        <div>
+        <form action="register.php" method="POST">
             <br>
-            <P><b>REGISTER AS</b><br>
-                <select name="regas" id="regas" required >
-                    <option value=""><b>-- SELECT --</b></option>
-                    <option value="customer">CUSTOMER</option>
-                    <option value="admin">ADMIN</option>
-                    <option value="technician">TECHNICIAN</option>
-                </select></P>
+            <div>
 
-            <p><b>NAME</b><br> <input type="text" Name="name" id="name" placeholder="ENTER YOUR NAME" required></p>
-            <p><b>MOBILE NUMBER</b><br> <input type="number" Name="number" id="number" placeholder="MOBILE NUMBER" required></p>
+                <select name="regtype" id="regtype" required >
+                    <option value=""><b>-- REGISTER AS --</b></option>
+                    <option value="CUSTOMER">CUSTOMER</option>
+                    <option value="ADMIN">ADMIN</option>
+                    <option value="TECHNICIAN">TECHNICIAN</option>
+                </select></div>
+
+            <div>
+            <input type="text" Name="name" id="name" placeholder="ENTER YOUR NAME" required>
+            <input type="email" name="email" id="email" required placeholder="example@gmail.com" required>
+            
+            <select name="gender" id="gender" required >
+                <option value=""><b>-- GENDER --</b></option>
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option>
+                <option value="OTHERS">OTHERS</option>
+            </select>
+           <input type="number" Name="mobileno" id="mobileno" placeholder="MOBILE NUMBER" required>
+
+            <input type="text" Name="username" id="username" placeholder="ENTER USERNAME" required>
+                          
+            <div class="password-container">
+            <input type="password" Name="pass" id="pass" placeholder="ENTER PASSWORD" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="eye-icon" id="eyeIcon">Show</i>
+                </span>
+            </div>
             <br>
-            <input type="submit" value=" SEND OTP " >
+            </div>
+            <br>
+            <input type="submit" value=" SUBMIT " >
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input class="bttn" type="reset" value="RESET">
             <br>
             <br>
         </form>
+    </div>
+        
         </fieldset>
-        </fieldset>
-    
+        <script src="script.js"></script>
 </body>
 </html>

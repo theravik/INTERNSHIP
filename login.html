@@ -5,31 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
     <div>
     <fieldset>
-    <fieldset>
         <legend><h3><b>LOGIN/ SIGNUP</b></h3></legend>   
         <button><a href="register.html"><b> REGISTER </b></a></button>
-        <br>
-        <button><a href="password.html"><b> Forget Password </b></a></button>
+       
         <legend><img src="login.png" width="10%"></legend>
-    <form>
+    <form action="login.php" method="POST">
         <br>
-        <p><b>USERNAME</b><br>
-        <input type="number" Name="number" id="number" placeholder="USERNAME" required>
+
+        <div>
+
+            <select name="regtype" id="regtype" required >
+                <option value=""><b>-- LOGIN AS --</b></option>
+                <option value="CUSTOMER">CUSTOMER</option>
+                <option value="ADMIN">ADMIN</option>
+                <option value="TECHNICIAN">TECHNICIAN</option>
+            </select></div>
+
+        <input type="text" Name="username" id="username" placeholder="ENTER USERNAME" required>
         </p>
-        <p><b>PASSWORD</b><br>
-        <input type="password" Name="pass" id="name" placeholder="PASSWORD" required >
-        </p>
+        <div class="password-container">
+            <input type="password" Name="pass" id="pass" placeholder="ENTER PASSWORD" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="eye-icon" id="eyeIcon">Show</i>
+                </span>
+            </div>
+
         <br>
-        <input type="submit" value="SUBMIT">
+        <input type="submit" value="LOGIN">
         <br>
+
     </form>
-    </fieldset>
+     <button><a href="password.html"><b> FORGOT PASSWORD </b></a></button>
     </fieldset>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

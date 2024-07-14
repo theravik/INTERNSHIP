@@ -8,41 +8,40 @@
 </head>
 <body>
     <div>
-    <form>
+    <form action="service.php" method="POST">
         
         <fieldset>
-            <P><h2><b>SERVICE REQUEST</h2></b></P>
+            <P><h1><b>SERVICE REQUEST</h1></b></P>
+
+            <b>SELECT THE PRODUCT</b>
+            <br>
+                <select name="prod_name" id="prod_name" required >
+                    <option value=""><b>--- SELECT ---</b></option>
+                    <option value="AC">AC</option>
+                    <option value="TV">TV</option>
+                    <option value="REFRIGRATOR">REFRIGRATOR</option>
+
+                </select>
         
         <P>
-            <b>PRODUCT CONDITION</b>
             <br>
-                <select name="product" id="product" required >
-                    <option value=""><b>--- SELECT ---</b></option>
-                    <option value="norworking">NOT WORKING</option>
-                    <option value="partial">PARTIALLY WOKING</option>
-                    <option value="malfuctn">MALFUNCTIONING</option>
+                <select name="prod_cond" id="prod_cond" required >
+                    <option value=""><b>--- PRODUCT CONDITION ---</b></option>
+                    <option value="NOTWORK">NOT WORKING</option>
+                    <option value="PARTWORK">PARTIALLY WOKING</option>
+                    <option value="MALFUNCT">MALFUNCTIONING</option>
                 </select>
         </P>
 
-            <p>PROBLEM DESCRIPTION : <textarea name="probdes" id="probdes" cols="10" rows="10" required placeholder="Write a breif description about the problem"></textarea></p>
+            <p>PROBLEM DESCRIPTION : <textarea name="descript" id="descripy" cols="10" rows="10" required placeholder="Write a breif description about the problem. Maximum word count : 1000"></textarea></p>
             
         <hr>
-            <h2>CONTACT DETAILS : </h2>
+            <h1>CONTACT DETAILS : </h1>
             <form>
-                <p>FIRST NAME : <input type="text" required name="fname" placeholder="FIRST NAME">
-                    <br>
-                    <br>
-                MIDDLE NAME : <input type="text" name="mname" placeholder="MIDDLE NAME">
-                <br>
-                <br>
-                LAST NAME : <input type="text" required name="lname" placeholder="LAST NAME"></p>
-
-                <p>MOBILE NUMBER : <input type="number" id="mobileno" name="mobileno" required placeholder="MOBILE NUMBER"></p>
-                <p>ADDRESS : <textarea name="adress" id="adress" cols="10" rows="2" placeholder="ADDRESS"></textarea></p>
-                <p>E-MAIL : <input type="email" name="email" id="email" required placeholder="example@gmail.com"> </p>
+                <input type="text" Name="mem_id" id="mem_id" placeholder="ENTER MEMBER ID" required>
+                <p>ADDRESS : <textarea name="addres" id="addres" cols="10" rows="2" placeholder="ADDRESS"></textarea></p>
                 <p> PINCODE : <input type="number" name="pincode" id="pincode" required placeholder="PINCODE"> </p>
-         
-            <br>
+                     <br>
             <br>
             <input type="submit" value="SUBMIT">
         </Fieldset>
@@ -50,3 +49,4 @@
     </div>
 </body>
 </html>
+

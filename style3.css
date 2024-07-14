@@ -20,6 +20,7 @@ legend, form{
 
 fieldset {
     border-radius: 5px;
+    text-align: center;
     border: 3px solid black;
     display: block;
     margin-left: 2px;
@@ -42,11 +43,11 @@ input, select{
     font-size: 15px;
     }
 
-select, button{
-    font-weight: bold;
-    text-align: left;
-    background-color: burlywood;
-}
+    select{
+        font-weight: bold;
+        text-align: left;
+        background-color: burlywood;
+    }
 p{
     text-indent: 5px;
     font-weight: 300;
@@ -55,7 +56,7 @@ p{
 
 .bttn, button, input[type="submit"]{
     text-decoration: none;
-    width: 40%;
+    width: 100%;
     margin: 0.5%;
     padding: 2%;
     border: none;
@@ -64,6 +65,8 @@ p{
     background-color: rgb(166, 213, 54);
     font-size: 25px;
     font-weight: bold;
+    text-align: center;
+    color: black;
     transition: width 2s;
 }
 a{
@@ -101,4 +104,7 @@ button:hover,.bttn:hover, input[type="submit"]:hover{
     cursor: pointer;
 }
 
-
+table{
+    color: black;
+    border: 2px solid black;
+}

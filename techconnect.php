@@ -1,7 +1,7 @@
 <?php
 session_start();
 echo "WELCOME " .$_SESSION['user_name'];
-echo "<br> <b>MEMBER ID :</b>".$_SESSION['mem'];
+echo "<br> <b>MEMBER ID :</b> ".$_SESSION['mem'];
 if($_SESSION['user_name'] == false){
     header('location:login.html');
 }
@@ -17,71 +17,9 @@ if($_SESSION['user_name'] == false){
     <link rel="stylesheet" href="style4.css">
 </head>
 <body>
+
     <br>
     <button><a href="logout.php">LOGOUT</button>
-    <fieldset>
-    <h2 align ="center">INFORMATION</h2>
-    <center>
-        <table border="1">
-        <tr>
-            <th width="10%">Sl no.</th>
-            <th width="10%">MEMBER ID</th>
-            <th width="10%">NAME</th>
-            <th width="10%">EMAIL</th>
-            <th width="10%">MOBILE NUMBER</th>
-            <th width="10%">REGISTERED AS</th>
-            <th width="10%">GENDER</th>
-        </tr>
-        
-<?php
-
-$server="localhost";
-$username="root";
-$password="Aditya@2001";
-$dbname="company";
-
-$con = mysqli_connect($server, $username, $password, $dbname);
-if(!$con){
-    echo"not connected";
-}
-
-$sql = "select sl, mem_id, name, email, mobileno, regtype, gender from info";
-$result = $con -> query($sql);
-
-if($result -> num_rows > 0){
-    while($row = mysqli_fetch_assoc($result)){
-        echo "<tr>
-        <td>".$row['sl']."</td>
-        <td>".$row['mem_id']."</td>
-        <td>".$row['name']."</td>
-        <td>".$row['email']."</td>
-        <td>".$row['mobileno']."</td>
-        <td>".$row['regtype']."</td>
-        <td>".$row['gender']."</td>
-        </tr>";
-      }
-}
-else{
-    echo '<b><font color="maroon">THE INFORMATION DATABASE IS EMPTY...!!</font></b>';
-}
-?>
-    </table> 
-</center>
-</fieldset>
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel="stylesheet" href="style4.css">
-</head>
-<body>
    <br>
    <br>
 
@@ -319,7 +257,7 @@ if(!$con){
     echo"not connected";
 }
 
-$sql = "select demo_id, prod_name, demo_mode, demo.mem_id, name, email, mobileno, addres, pincode from info join demo where demo.mem_id = info.mem_id;";
+$sql = "select demo_id, prod_name, demo_mode, demo.mem_id, name, email, mobileno, addres, pincode from info join demo where demo.mem_id = info.mem_id";
 $result = $con -> query($sql);
 
 if($result -> num_rows > 0){

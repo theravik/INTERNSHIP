@@ -8,19 +8,19 @@
 </head>
 <body>
     <div>
-    <form>
+    <form action="install.php" method="POST">
         
         <fieldset>
-            <P><h2><b>INSTALLATION REQUEST</h2></b></P>
+            <P><h1><b>INSTALLATION REQUEST</h1></b></P>
 
         <P>
             <b>SELECT THE PRODUCT</b>
             <br>
-                <select name="product" id="product" required >
+                <select name="prod_name" id="prod_name" required >
                     <option value=""><b>--- SELECT ---</b></option>
-                    <option value="ac">AC</option>
-                    <option value="tv">TV</option>
-                    <option value="fridge">REFRIGRATOR</option>
+                    <option value="AC">AC</option>
+                    <option value="TV">TV</option>
+                    <option value="REFRIGRATOR">REFRIGRATOR</option>
 
                 </select>
         </P>
@@ -28,19 +28,10 @@
     
                     
         <hr>
-            <h2>CONTACT DETAILS : </h2>
+            <h1>CONTACT DETAILS : </h1>
             <form>
-                <p>FIRST NAME : <input type="text" required name="fname" placeholder="FIRST NAME">
-                    <br>
-                    <br>
-                MIDDLE NAME : <input type="text" name="mname" placeholder="MIDDLE NAME">
-                <br>
-                <br>
-                LAST NAME : <input type="text" required name="lname" placeholder="LAST NAME"></p>
-
-                <p>MOBILE NUMBER : <input type="number" id="mobileno" name="mobileno" required placeholder="MOBILE NUMBER"></p>
-                <p>ADDRESS : <textarea name="adress" id="adress" cols="10" rows="2" placeholder="ADDRESS"></textarea></p>
-                <p>E-MAIL : <input type="email" name="email" id="email" required placeholder="example@gmail.com"> </p>
+                <input type="text" Name="mem_id" id="mem_id" placeholder="ENTER MEMBER ID" required>
+                <p>ADDRESS : <textarea name="addres" id="addres" cols="10" rows="2" placeholder="ADDRESS"></textarea></p>
                 <p> PINCODE : <input type="number" name="pincode" id="pincode" required placeholder="PINCODE"> </p>
          
             <br>
