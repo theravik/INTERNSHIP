@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        
+            <div>
+            <button><a href="login.html"><b> LOGIN </b></a></button>
+            <legend><img src="login.png" width="10%"></legend>
+            <legend><h1><b>REGISTER</b></h1></legend>
+        
+        </div>
+        <div>
+        <form action="register.php" method="POST">
+            <br>
+            <div>
+
+                <select name="regtype" id="regtype" required >
+                    <option value=""><b>-- REGISTER AS --</b></option>
+                    <option value="CUSTOMER">CUSTOMER</option>
+                    <option value="ADMIN">ADMIN</option>
+                    <option value="TECHNICIAN">TECHNICIAN</option>
+                </select></div>
+
+            <div>
+            <input type="text" Name="name" id="name" placeholder="ENTER YOUR NAME" required>
+            <input type="email" name="email" id="email" required placeholder="example@gmail.com" required>
+            
+            <select name="gender" id="gender" required >
+                <option value=""><b>-- GENDER --</b></option>
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option>
+                <option value="OTHERS">OTHERS</option>
+            </select>
+           <input type="number" Name="mobileno" id="mobileno" placeholder="MOBILE NUMBER" required maxlength="10">
+
+            <input type="text" Name="username" id="username" placeholder="ENTER USERNAME" required>
+                          
+            <div class="password-container">
+            <input type="password" Name="pass" id="pass" placeholder="ENTER PASSWORD" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="eye-icon" id="eyeIcon">Show</i>
+                </span>
+            </div>
+            <br>
+            </div>
+            <br>
+            <input type="submit" value=" SUBMIT " >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="bttn" type="reset" value="RESET">
+            <br>
+            <br>
+        </form>
+    </div>
+        
+        </fieldset>
+        <script src="script.js"></script>
+</body>
+</html>

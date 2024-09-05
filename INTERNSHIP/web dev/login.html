@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div>
+    <fieldset>
+        <legend><h3><b>LOGIN/ SIGNUP</b></h3></legend>   
+        <button><a href="register.html"><b> REGISTER </b></a></button>
+       
+        <legend><img src="login.png" width="10%"></legend>
+    <form action="login.php" method="POST">
+        <br>
+
+        <div>
+
+            <select name="regtype" id="regtype" required >
+                <option value=""><b>-- LOGIN AS --</b></option>
+                <option value="CUSTOMER">CUSTOMER</option>
+                <option value="ADMIN">ADMIN</option>
+                <option value="TECHNICIAN">TECHNICIAN</option>
+            </select>
+        </div>
+        <div>
+        <input type="text" Name="username" id="username" placeholder="ENTER USERNAME" required>
+        </div>
+        <div class="password-container">
+            <input type="password" Name="pass" id="pass" placeholder="ENTER PASSWORD" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="eye-icon" id="eyeIcon">Show</i>
+                </span>
+            </div>
+
+        <br>
+        <input type="submit" value="LOGIN">
+        <br>
+
+    </form>
+     <button><a href="password.html"><b> FORGOT PASSWORD </b></a></button>
+    </fieldset>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

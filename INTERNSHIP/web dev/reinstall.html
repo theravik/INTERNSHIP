@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER | RE-INSTALLATION </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div>
+    <form action="reinstall.php" method="POST">
+        
+        <fieldset>
+            <P><h1><b>RE-INSTALLATION REQUEST</h1></b></P>
+
+        <P>
+            <b>SELECT THE PRODUCT</b>
+            <br>
+                <select name="prod_name" id="prod_name" required >
+                    <option value=""><b>--- SELECT ---</b></option>
+                    <option value="AC">AC</option>
+                    <option value="TV">TV</option>
+                    <option value="REFRIGRATOR">REFRIGRATOR</option>
+
+                </select>
+        </P>
+
+    
+                    
+        <hr>
+            <h1>CONTACT DETAILS : </h1>
+
+            <form>
+                <p>OLD ADDRESS : <textarea name="old_addres" id="old_addres" cols="10" rows="2" placeholder="OLD-ADRESS (including PIN code)" maxlength="100-150" title="Address must be under 150 characters"></textarea></p>
+                <p>NEW ADDRESS : <textarea name="new_addres" id="new_addres" cols="10" rows="2" placeholder="NEW-ADDRESS (including PIN code)" maxlength="100-150" title="Address must be under 150 characters"></textarea></p>
+          
+         
+            <br>
+            <br>
+            <input type="submit" value="SUBMIT">
+        </Fieldset>
+    </form>
+    </div>
+</body>
+</html>

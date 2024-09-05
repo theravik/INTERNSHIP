@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER | REQUEST </title>
+    <link rel="stylesheet" href="style0.css">
+</head>
+<body>
+    <div>
+    <form action="service.php" method="POST">
+        
+        <fieldset>
+            <P><h1><b>SERVICE REQUEST</h1></b></P>
+
+            <b>SELECT THE PRODUCT</b>
+            <br>
+                <select name="prod_name" id="prod_name" required >
+                    <option value=""><b>--- SELECT ---</b></option>
+                    <option value="AC">AC</option>
+                    <option value="TV">TV</option>
+                    <option value="REFRIGRATOR">REFRIGRATOR</option>
+
+                </select>
+        
+        <P>
+            <br>
+                <select name="prod_cond" id="prod_cond" required >
+                    <option value=""><b>--- PRODUCT CONDITION ---</b></option>
+                    <option value="NOTWORK">NOT WORKING</option>
+                    <option value="PARTWORK">PARTIALLY WOKING</option>
+                    <option value="MALFUNCT">MALFUNCTIONING</option>
+                </select>
+        </P>
+
+            <p>PROBLEM DESCRIPTION : <textarea name="descript" id="descripy" cols="10" rows="10" required placeholder="Write a breif description about the problem. Maximum characters : 1000" title="Problem description must be under 1000 characters" maxlength="1000"></textarea></p>
+            
+        <hr>
+            <h1>CONTACT DETAILS : </h1>
+            <form>
+                <p>ADDRESS : <textarea name="addres" id="addres" cols="10" rows="2" placeholder="ADDRESS" maxlength="100-150" title="Address must be under 150 characters"></textarea></p>
+                <p> PINCODE : <input type="number" name="pincode" id="pincode" required placeholder="PINCODE" maxlength="6" title="Pincode must be under 6 characters"> </p>
+                     <br>
+            <br>
+            <input type="submit" value="SUBMIT">
+        </Fieldset>
+    </form>
+    </div>
+</body>
+</html>
+

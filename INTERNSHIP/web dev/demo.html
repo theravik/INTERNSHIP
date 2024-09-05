@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER | DEMO </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div>
+    <form action="demo.php" method="POST">
+        
+        <fieldset>
+            <h1><b>DEMO REQUEST</h1></b>
+        
+        <P><div>
+            <b>SELECT THE PRODUCT</b>
+            <br>
+                <select name="prod_name" id="prod_name" required >
+                    <option value=""><b>--- SELECT ---</b></option>
+                    <option value="AC">AC</option>
+                    <option value="TV">TV</option>
+                    <option value="REFRIGRATOR">REFRIGRATOR</option>
+
+                </select></div>
+        </P>
+
+        <P><div>
+            <b>SELECT TYPE OF DEMONSTRATION</b>
+            <br>
+                <select name="demo_mode" id="demo_mode" required >
+                    <option value=""><b>--- SELECT ---</b></option>
+                    <option value="ONLINE">ONLINE</option>
+                    <option value="OFFLINE">OFFLINE</option>
+                    
+                </select></div>
+        </P>
+
+                    
+        <hr>
+            <h1>CONTACT DETAILS : </h1>
+            <form><div>
+ 
+                <p>ADDRESS : <textarea name="addres" id="addres" cols="10" rows="2" placeholder="ADDRESS" maxlength="100-150" title="Address must be under 150 characters"></textarea></p>
+                <p> PINCODE : <input type="number" name="pincode" id="pincode" required placeholder="PINCODE" maxlength="6" title="Pincode must be under 6 characters"> </p>
+         
+            <br>
+            <br>
+            <input type="submit" value="SUBMIT"></div>
+        </Fieldset>
+    </form>
+    </div>
+</body>
+</html>
